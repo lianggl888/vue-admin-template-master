@@ -159,6 +159,30 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/css',
+    component: Layout,
+    redirect: '/css/rotate',
+    name: 'CSS3',
+    meta: {
+      title: 'CSS3案例',
+      icon: 'nested'
+    },
+    children: [
+      {
+        path: 'rotate',
+        component: () => import('@/views/css3/index1'),
+        name: 'rotate',
+        meta: { title: '案例1' }
+      },
+      {
+        path: 'menu2',
+        component: () => import('@/views/nested/menu2/index'),
+        name: 'Menu2',
+        meta: { title: 'menu2' }
+      }
+    ]
+  },
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
