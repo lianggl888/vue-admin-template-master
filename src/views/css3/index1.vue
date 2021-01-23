@@ -1,6 +1,6 @@
 <template>
   <div class="app-container" style="display: flex;justify-content: flex-start;flex-wrap: wrap;">
-    <div class="div1">你好。这是一个 DIV 元素。</div>
+    <div class="div1">本例包含-边框-圆角-背景-渐变</div>
     <div class="rotate2">transform: rotate 属性，允许您旋转DIV</div>
     <div class="radius-1">border-radius: 15px 50px 30px 5px 四个值: 第一个值为左上角，第二个值为右上角，第三个值为右下角，第四个值为左下角</div>
     <div class="radius-2">border-radius: 15px 50px 30px 三个值: 第一个值为左上角, 第二个值为右上角和左下角，第三个值为右下角</div>

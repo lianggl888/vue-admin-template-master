@@ -177,9 +177,9 @@ export const constantRoutes = [
       },
       {
         path: 'menu2',
-        component: () => import('@/views/nested/menu2/index'),
+        component: () => import('@/views/css3/index2'),
         name: 'Menu2',
-        meta: { title: 'menu2' }
+        meta: { title: '案例2' }
       }
     ]
   },
