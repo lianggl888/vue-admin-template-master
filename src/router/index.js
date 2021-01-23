@@ -170,16 +170,28 @@ export const constantRoutes = [
     },
     children: [
       {
-        path: 'rotate',
+        path: 'menu1',
         component: () => import('@/views/css3/index1'),
-        name: 'rotate',
-        meta: { title: '案例1' }
+        name: 'Menu1',
+        meta: { title: '边框圆角背景渐变' }
       },
       {
         path: 'menu2',
         component: () => import('@/views/css3/index2'),
         name: 'Menu2',
-        meta: { title: '案例2' }
+        meta: { title: '文本效果文本溢出属性' }
+      },
+      {
+        path: 'menu3',
+        component: () => import('@/views/css3/index3'),
+        name: 'Menu3',
+        meta: { title: '2D转换' }
+      },
+      {
+        path: 'menu4',
+        component: () => import('@/views/css3/index4'),
+        name: 'Menu4',
+        meta: { title: '3D转换' }
       }
     ]
   },
