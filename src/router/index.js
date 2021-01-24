@@ -192,6 +192,18 @@ export const constantRoutes = [
         component: () => import('@/views/css3/index4'),
         name: 'Menu4',
         meta: { title: '3D转换' }
+      },
+      {
+        path: 'menu5',
+        component: () => import('@/views/css3/index5'),
+        name: 'Menu5',
+        meta: { title: 'CSS3过渡' }
+      },
+      {
+        path: 'menu6',
+        component: () => import('@/views/css3/index6'),
+        name: 'Menu6',
+        meta: { title: 'CSS3动画' }
       }
     ]
   },

@@ -7,7 +7,7 @@
       rotateX()方法，围绕其在一个给定度数X轴旋转的元素。<br>
       transform: rotateY(130deg);
       -webkit-transform: rotateY(130deg); /* Safari 与 Chrome */
-
+      rotateY() 方法围绕其在一个给定度数Y轴旋转的元素。
     </div>
   </div>
 </template>
