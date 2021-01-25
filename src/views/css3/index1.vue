@@ -42,12 +42,11 @@
     </div>
     <div style="display: flex;flex-direction: column;align-items: center;">
       <div
-        style="background: rgba(0,0,0,0.7);padding: 10px 5px;color: #fff;font-size: 12px;width: 120px;display: flex;justify-content: center;align-items: center;">
+        style="background: rgba(0,0,0,0.7);padding: 10px 5px;color: #fff;font-size: 12px;width: 120px;display: flex;justify-content: center;align-items: center;"
+      >
         asdf
       </div>
-      <div style="width: 0px;height: 0px;border: 10px solid transparent;border-top-color: rgba(0,0,0,0.9);">
-
-      </div>
+      <div style="width: 0;height: 0;border: 10px solid transparent;border-top-color: rgba(0,0,0,0.9);" />
     </div>
   </div>
 </template>
