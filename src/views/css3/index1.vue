@@ -40,6 +40,15 @@
     <div class="repeating-radial-gradient">
       repeating-radial-gradient() 函数用于重复径向渐变：
     </div>
+    <div style="display: flex;flex-direction: column;align-items: center;">
+      <div
+        style="background: rgba(0,0,0,0.7);padding: 10px 5px;color: #fff;font-size: 12px;width: 120px;display: flex;justify-content: center;align-items: center;">
+        asdf
+      </div>
+      <div style="width: 0px;height: 0px;border: 10px solid transparent;border-top-color: rgba(0,0,0,0.9);">
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -282,7 +291,7 @@ export default {
   background-image: radial-gradient(farthest-side at 30% 30%, red, yellow, blue);
 }
 
-.repeating-radial-gradient{
+.repeating-radial-gradient {
   margin: 15px;
   width: 300px;
   height: 260px;

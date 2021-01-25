@@ -25,8 +25,11 @@
       <div class="div3">animation-timing-function:ease-in</div>
       <div class="div4">animation-timing-function:ease-out</div>
       <div class="div5">animation-timing-function:ease-in-out</div>
-    </div>
 
+    </div>
+    <div class="wave">
+
+    </div>
   </div>
 </template>
 
@@ -195,6 +198,31 @@ export default {
   }
   to {
     left: 300px;
+  }
+}
+
+.wave {
+  margin: 130px;
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  animation: wave_info 5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave_info {
+  0% {
+    transform: scale(1, 1);
+    background: rgba(6, 198, 255, 0);
+  }
+  50% {
+    transform: scale(3.5, 3.5);
+    background: rgba(6, 198, 255, 0.5);
+  }
+  100% {
+    transform: scale(7, 7);
+    background: rgba(6, 198, 255, 0);
   }
 }
 </style>
