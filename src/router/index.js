@@ -5,6 +5,8 @@ Vue.use(Router)
 
 /* Layout */
 import Layout from '@/layout'
+import cssManager from '@/router/modules/css'
+import cloudCenter from "@/router/modules/cloudCenter";
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -159,55 +161,8 @@ export const constantRoutes = [
       }
     ]
   },
-  {
-    path: '/css',
-    component: Layout,
-    redirect: '/css/rotate',
-    name: 'CSS3',
-    meta: {
-      title: 'CSS3案例',
-      icon: 'nested'
-    },
-    children: [
-      {
-        path: 'menu1',
-        component: () => import('@/views/css3/index1'),
-        name: 'Menu1',
-        meta: { title: '边框圆角背景渐变' }
-      },
-      {
-        path: 'menu2',
-        component: () => import('@/views/css3/index2'),
-        name: 'Menu2',
-        meta: { title: '文本效果文本溢出属性' }
-      },
-      {
-        path: 'menu3',
-        component: () => import('@/views/css3/index3'),
-        name: 'Menu3',
-        meta: { title: '2D转换' }
-      },
-      {
-        path: 'menu4',
-        component: () => import('@/views/css3/index4'),
-        name: 'Menu4',
-        meta: { title: '3D转换' }
-      },
-      {
-        path: 'menu5',
-        component: () => import('@/views/css3/index5'),
-        name: 'Menu5',
-        meta: { title: 'CSS3过渡' }
-      },
-      {
-        path: 'menu6',
-        component: () => import('@/views/css3/index6'),
-        name: 'Menu6',
-        meta: { title: 'CSS3动画' }
-      }
-    ]
-  },
-
+  cssManager,
+  cloudCenter,
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
