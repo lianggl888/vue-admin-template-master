@@ -27,9 +27,7 @@
       <div class="div5">animation-timing-function:ease-in-out</div>
 
     </div>
-    <div class="wave">
-
-    </div>
+    <div class="wave" />
   </div>
 </template>
 

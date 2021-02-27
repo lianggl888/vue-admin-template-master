@@ -15,6 +15,7 @@ import router from './router'
 import './assets/iconfont/iconfont.css'// 阿里字体图标库
 import '@/icons' // icon
 import '@/permission' // permission control
+import 'cesium/Widgets/widgets.css'
 
 /**
  * If you don't want to use mock-server

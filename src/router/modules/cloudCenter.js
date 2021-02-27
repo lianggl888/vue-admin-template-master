@@ -23,7 +23,7 @@ const cloudCenterManager = {
       component: () => import('@/views/cloudCenter/index2'),
       name: 'cloudCenter2',
       meta: { title: '对话框模板' }
-    },
+    }
     // {
     //   path: 'menu3',
     //   component: () => import('@/views/css3/index3'),

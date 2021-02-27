@@ -8,12 +8,12 @@
               <el-row type="flex" justify="start" align="top">
                 <el-col :span="4.5">
                   <el-form-item label-width="100px" label="条件1" prop="obuSn">
-                    <el-input v-model="postData.string1" placeholder="条件1" clearable :style="{width: '100%'}"/>
+                    <el-input v-model="postData.string1" placeholder="条件1" clearable :style="{width: '100%'}" />
                   </el-form-item>
                 </el-col>
                 <el-col :span="4.5">
                   <el-form-item label-width="100px" label="条件2" prop="iccid">
-                    <el-input v-model="postData.string2" placeholder="条件2" clearable :style="{width: '100%'}"/>
+                    <el-input v-model="postData.string2" placeholder="条件2" clearable :style="{width: '100%'}" />
                   </el-form-item>
                 </el-col>
               </el-row>
