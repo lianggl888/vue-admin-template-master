@@ -17,6 +17,8 @@ import '@/icons' // icon
 import '@/permission' // permission control
 import 'cesium/Widgets/widgets.css'
 
+Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyY2NmOWE3MS00Y2VhLTQ0YTYtYTU5Yy1iY2JlMjY0MTIwMzMiLCJpZCI6NDQ4NDMsImlhdCI6MTYxNDQ3ODQwNn0.WjkwFeef-TYDWtysNlTkFhOABthMGgpDMoowV6vQ8X8'
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
