@@ -7,6 +7,12 @@
 <script>
 export default {
   name: '',
+  data() {
+    return {
+      vehicleEntity: null,
+      czmlPath: ''
+    }
+  },
   mounted() {
     // var viewer = new Cesium.CesiumWidget('cesiumContainer')
 
@@ -16,29 +22,33 @@ export default {
       homeButton: false, // 返回默认视图 是否显示
       sceneModePicker: false, // 是否显示投影方式控件
       baseLayerPicker: true, // 是否显示图层选择控件
-      animation: false, // 是否显示动画控件
+      animation: true, // 是否显示动画控件
       timeline: false, // 是否显示时间线控件
       navigationHelpButton: false, // 是否显示帮助信息控件
       infoBox: false, // 是否显示点击要素之后显示的信息
-      fullscreenButton: true, // 是否显示全屏按钮
+      fullscreenButton: true // 是否显示全屏按钮
     })
-     // 设置初始位置
+    // 设置初始位置
     viewer.camera.setView({
+      // eslint-disable-next-line no-undef
       destination: Cesium.Cartesian3.fromDegrees(-107.0, 40.0, 300000.0)
     })
     viewer.scene.debugShowFramesPerSecond = true // 是否显示帧数
+    // eslint-disable-next-line no-undef
+    const dataSource = new Cesium.CzmlDataSource()
+    viewer.dataSource.add(dataSource)
 
     // 通过entities探究形状
-    viewer.entities.add({
-      name: 'Red box with black outline',
-      position: Cesium.Cartesian3.fromDegrees(-107.0, 40.0, 300000.0),
-      box: {
-        dimensions: new Cesium.Cartesian3(400000.0, 300000.0, 50000.0),
-        material: Cesium.Color.RED.withAlpha(0.5),
-        outline: true,
-        outlineColor: Cesium.Color.BLACK
-      }
-    })
+    // viewer.entities.add({
+    //   name: 'Red box with black outline',
+    //   position: Cesium.Cartesian3.fromDegrees(-107.0, 40.0, 300000.0),
+    //   box: {
+    //     dimensions: new Cesium.Cartesian3(400000.0, 300000.0, 50000.0),
+    //     material: Cesium.Color.RED.withAlpha(0.5),
+    //     outline: true,
+    //     outlineColor: Cesium.Color.BLACK
+    //   }
+    // })
 
     // eslint-disable-next-line no-console
     console.log(viewer)

@@ -8,6 +8,7 @@ import Layout from '@/layout'
 import cssManager from '@/router/modules/css'
 import cloudCenter from '@/router/modules/cloudCenter'
 import cesiumManager from './modules/cesium'
+import amapManager from "@/router/modules/amap";
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -165,6 +166,7 @@ export const constantRoutes = [
   cssManager,
   cloudCenter,
   cesiumManager,
+  amapManager,
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
