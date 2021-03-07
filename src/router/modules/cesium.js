@@ -16,13 +16,25 @@ const cesiumManager = {
       path: 'cesium1',
       component: () => import('@/views/cesium/index1'),
       name: 'cesium1',
-      meta: { title: 'cesium1' }
+      meta: { title: '设置初始位置' }
     },
     {
       path: 'cesium2',
       component: () => import('@/views/cesium/index2'),
       name: 'cesium2',
-      meta: { title: 'cesium2' }
+      meta: { title: '简单地球' }
+    },
+    {
+      path: 'cesium3',
+      component: () => import('@/views/cesium/index3'),
+      name: 'cesium3',
+      meta: { title: '全球地形' }
+    },
+    {
+      path: 'cesium4',
+      component: () => import('@/views/cesium/index4'),
+      name: 'cesium4',
+      meta: { title: 'home按钮监听事件' }
     }
   ]
 }
