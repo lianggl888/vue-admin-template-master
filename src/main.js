@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueCesium from 'vue-cesium'
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
@@ -19,6 +20,19 @@ import 'cesium/Widgets/widgets.css'
 
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyY2NmOWE3MS00Y2VhLTQ0YTYtYTU5Yy1iY2JlMjY0MTIwMzMiLCJpZCI6NDQ4NDMsImlhdCI6MTYxNDQ3ODQwNn0.WjkwFeef-TYDWtysNlTkFhOABthMGgpDMoowV6vQ8X8'
 
+Vue.use(VueCesium, {
+  // cesiumPath 是指引用的Cesium.js路径，如
+  // 项目本地的Cesium Build包，vue项目需要将Cesium Build包放static目录：
+  // cesiumPath: /static/Cesium/Cesium.js
+  // 个人在线Cesium Build包：
+  // cesiumPath: 'https://zouyaoji.top/vue-cesium/statics/Cesium/Cesium.js'
+  // 个人在线SuperMap Cesium Build包（在官方基础上二次开发出来的）：
+  // cesiumPath: 'https://zouyaoji.top/vue-cesium/statics/SuperMapCesium/Cesium.js'
+  // 官方在线Cesium Build包，有CDN加速，推荐用这个：
+  cesiumPath: 'https://unpkg.com/cesium/Build/Cesium/Cesium.js',
+  // 指定Cesium.Ion.defaultAccessToken，使用Cesium ion的数据源需要到https://cesium.com/ion/申请一个账户，获取Access Token。不指定的话可能导致Cesium在线影像加载不了
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyY2NmOWE3MS00Y2VhLTQ0YTYtYTU5Yy1iY2JlMjY0MTIwMzMiLCJpZCI6NDQ4NDMsImlhdCI6MTYxNDQ3ODQwNn0.WjkwFeef-TYDWtysNlTkFhOABthMGgpDMoowV6vQ8X8'
+})
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api

@@ -8,7 +8,8 @@ import Layout from '@/layout'
 import cssManager from '@/router/modules/css'
 import cloudCenter from '@/router/modules/cloudCenter'
 import cesiumManager from './modules/cesium'
-import amapManager from "@/router/modules/amap";
+import amapManager from "@/router/modules/amap"
+import vueCesiumManager from './modules/vueCesium'
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -167,6 +168,7 @@ export const constantRoutes = [
   cloudCenter,
   cesiumManager,
   amapManager,
+  vueCesiumManager,
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
