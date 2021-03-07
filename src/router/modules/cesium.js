@@ -35,6 +35,12 @@ const cesiumManager = {
       component: () => import('@/views/cesium/index4'),
       name: 'cesium4',
       meta: { title: 'home按钮监听事件' }
+    },
+    {
+      path: 'cesium5',
+      component: () => import('@/views/cesium/index5'),
+      name: 'cesium5',
+      meta: { title: '飞机飞行' }
     }
   ]
 }

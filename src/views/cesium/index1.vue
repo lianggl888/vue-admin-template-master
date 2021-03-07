@@ -34,9 +34,7 @@ export default {
       destination: Cesium.Cartesian3.fromDegrees(-107.0, 40.0, 300000.0)
     })
     viewer.scene.debugShowFramesPerSecond = true // 是否显示帧数
-    // eslint-disable-next-line no-undef
-    const dataSource = new Cesium.CzmlDataSource()
-    viewer.dataSource.add(dataSource)
+    
 
     // 通过entities探究形状
     // viewer.entities.add({
