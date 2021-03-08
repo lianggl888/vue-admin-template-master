@@ -11,6 +11,8 @@ import cesiumManager from './modules/cesium'
 import amapManager from "@/router/modules/amap"
 import vueCesiumManager from './modules/vueCesium'
 import cesiumModelManager from './modules/cesiumModel'
+import cesiumEntity from "@/router/modules/cesiumEntity";
+import cesiumEntityManager from "@/router/modules/cesiumEntity";
 
 /**
  * Note: sub-menu only appear when route children.length >= 1
@@ -171,6 +173,7 @@ export const constantRoutes = [
   amapManager,
   vueCesiumManager,
   cesiumModelManager,
+  cesiumEntityManager,
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]

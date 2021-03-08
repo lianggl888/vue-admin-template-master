@@ -31,7 +31,7 @@ export default {
       navigationInstructionsInitiallyVisible: false,
       shouldAnimate: true
     })
-    viewer.scene.globe.enableLighting = true
+    viewer.scene.globe.enableLighting = true // 是否开启光照
     viewer.scene.debugShowFramesPerSecond = true // 是否显示帧数
     const data = []
     data[0] = [{ longitude: 116.405419, dimension: 39.918034, height: 0, time: 0 }, { longitude: 116.2821, dimension: 39.918145, height: 0, time: 40 }, { longitude: 115.497402, dimension: 39.344641, height: 70000, time: 100 }, { longitude: 107.942392, dimension: 29.559967, height: 70000, time: 280 }, { longitude: 106.549265, dimension: 29.559967, height: 0, time: 360 }]
