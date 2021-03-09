@@ -24,6 +24,13 @@ const cesiumEntityManager = {
       name: 'cesium-entity2',
       meta: { title: '汽车轨迹移动' }
     }
+    ,
+    {
+      path: 'cesium-entity3',
+      component: () => import('@/views/cesiumEntiy/index3'),
+      name: 'cesium-entity3',
+      meta: { title: '几何图形' }
+    }
   ]
 }
 
