@@ -1,6 +1,6 @@
 <template>
   <div className="map-box">
-    <el-button @click="createModel('/Apps/SampleData/models/GroundVehicle/GroundVehicle.glb', 100)">
+    <el-button @click="createModel('/Apps/SampleData/models/GroundVehicle/GroundVehicle.glb', 0)">
       GroundVehicle
     </el-button>
     <div id="cesiumContainer"/>

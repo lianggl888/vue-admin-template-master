@@ -16,13 +16,13 @@ const cesiumEntityManager = {
       path: 'cesium-entity1',
       component: () => import('@/views/cesiumEntiy/index1'),
       name: 'cesium-entity1',
-      meta: { title: 'entity1' }
+      meta: { title: '汽车' }
     },
     {
       path: 'cesium-entity2',
       component: () => import('@/views/cesiumEntiy/index2'),
       name: 'cesium-entity2',
-      meta: { title: 'entity2' }
+      meta: { title: '汽车轨迹移动' }
     }
   ]
 }
