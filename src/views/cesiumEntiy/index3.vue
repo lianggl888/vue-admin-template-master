@@ -1,5 +1,6 @@
 <template>
   <div class="map-box">
+    <el-button @click="change">JS异步转同步</el-button>
     <div id="cesiumContainer" />
   </div>
 </template>
@@ -116,6 +117,27 @@ export default {
 
     // eslint-disable-next-line no-console
     console.log(this.viewer)
+  },
+  methods: {
+    change() {
+      function log(time) {
+        return new Promise((resolve, reject)=> {
+          setTimeout(function(){
+            console.log(time)
+            resolve()
+          }, 1000)
+        })
+      }
+
+      async function fun() {
+        await log(5000)
+        await log(10000)
+        log(1000)
+        console.log(1)
+      }
+
+      fun()
+    }
   }
 }
 </script>
