@@ -8,7 +8,7 @@ const cssManager = {
   redirect: '/css/rotate',
   name: 'CSS3',
   meta: {
-    title: 'CSS3案例',
+    title: 'CSS3',
     icon: 'nested'
   },
   children: [

@@ -41,6 +41,12 @@ const cesiumManager = {
       component: () => import('@/views/cesium/index5'),
       name: 'cesium5',
       meta: { title: '飞机飞行' }
+    },
+    {
+      path: 'cesium6',
+      component: () => import('@/views/cesium/index6'),
+      name: 'cesium6',
+      meta: { title: '信息弹窗' }
     }
   ]
 }

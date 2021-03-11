@@ -8,7 +8,7 @@ const cloudCenterManager = {
   redirect: '/css/rotate',
   name: 'cloudCenter',
   meta: {
-    title: '运营管理中心',
+    title: '模板',
     icon: 'nested'
   },
   children: [

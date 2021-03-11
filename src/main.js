@@ -17,6 +17,7 @@ import './assets/iconfont/iconfont.css'// 阿里字体图标库
 import '@/icons' // icon
 import '@/permission' // permission control
 import 'cesium/Widgets/widgets.css'
+import 'jquery'
 
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyY2NmOWE3MS00Y2VhLTQ0YTYtYTU5Yy1iY2JlMjY0MTIwMzMiLCJpZCI6NDQ4NDMsImlhdCI6MTYxNDQ3ODQwNn0.WjkwFeef-TYDWtysNlTkFhOABthMGgpDMoowV6vQ8X8'
 

@@ -19,17 +19,17 @@ const cesiumModelManager = {
       meta: { title: 'cesium-model' }
     },
     {
-      path: 'cesium-model',
+      path: 'cesium-model2',
       component: () => import('@/views/cesium-model/index2'),
       name: 'cesium-model2',
-      meta: { title: '简单地球' }
+      meta: { title: '信息弹窗' }
     },
-    // {
-    //   path: 'cesium3',
-    //   component: () => import('@/views/cesium/index3'),
-    //   name: 'cesium3',
-    //   meta: { title: '全球地形' }
-    // },
+    {
+      path: 'cesium-model3',
+      component: () => import('@/views/cesium/index3'),
+      name: 'cesium-model3',
+      meta: { title: '信息弹窗' }
+    },
     // {
     //   path: 'cesium4',
     //   component: () => import('@/views/cesium/index4'),
